@@ -102,8 +102,8 @@ function KitPage() {
       <div className="mt-24 border border-border bg-surface p-8 md:p-12">
         <p className="text-eyebrow">Plus</p>
         <p className="text-display mt-3 text-2xl md:text-3xl">
-          Sigma & Canon glass, RØDE audio, Aputure lighting, DaVinci Resolve
-          Studio for edit & grade.
+          Canon glass, Ankerwork M650 audio, DaVinci Resolve Studio for edit &
+          grade.
         </p>
       </div>
     </div>
