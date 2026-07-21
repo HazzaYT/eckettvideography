@@ -87,9 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Freelance videographer and editor crafting cinematic films, commercials and aerial work.",
+          "Harry Eckett — freelance videographer and editor crafting cinematic films, commercials and aerial work.",
       },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Harry Eckett — Freelance Videographer & Editor" },
+      { name: "twitter:description", content: "Harry Eckett — freelance videographer and editor crafting cinematic films, commercials and aerial work." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4b2756f0-69eb-4f74-9b85-45351a699f19/id-preview-22500f55--1ce0c80c-fa5a-4486-8731-5b007c1961a7.lovable.app-1784653695597.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4b2756f0-69eb-4f74-9b85-45351a699f19/id-preview-22500f55--1ce0c80c-fa5a-4486-8731-5b007c1961a7.lovable.app-1784653695597.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
