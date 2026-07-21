@@ -1,10 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
+import work2Asset from "@/assets/portfolio-aerial-australia.png.asset.json";
 import work3 from "@/assets/work-3.jpg";
 import work4 from "@/assets/work-4.jpg";
 import work5 from "@/assets/work-5.jpg";
 import work6 from "@/assets/work-6.jpg";
+
+const work2 = work2Asset.url;
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -27,7 +29,7 @@ export const Route = createFileRoute("/portfolio")({
 
 const projects = [
   { title: "Live Set", cat: "Music Video", year: "2025", img: work1, span: "md:col-span-4 md:row-span-2", h: "h-[560px]" },
-  { title: "Coastal Study", cat: "Aerial", year: "2025", img: work2, span: "md:col-span-8", h: "h-[280px]" },
+  { title: "Australia Tour", cat: "Aerial", year: "2026", img: work2, span: "md:col-span-8", h: "h-[280px]" },
   { title: "Reflections", cat: "Commercial", year: "2024", img: work4, span: "md:col-span-4", h: "h-[280px]" },
   { title: "Neon Nocturne", cat: "Short Film", year: "2024", img: work5, span: "md:col-span-4", h: "h-[280px]" },
   { title: "Golden Hour", cat: "Wedding", year: "2024", img: work3, span: "md:col-span-6", h: "h-[420px]" },
