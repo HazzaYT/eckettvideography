@@ -100,15 +100,15 @@ function Index() {
           <figure className="group relative overflow-hidden md:col-span-2">
             <img
               src={work1}
-              alt="Musician on stage under warm concert lighting"
+              alt="Milky Way stretching across a deep night sky"
               width={1200}
               height={1500}
               loading="lazy"
               className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
             />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-              <p className="text-eyebrow">Music · 2025</p>
-              <p className="text-display mt-1 text-xl">Live Set</p>
+              <p className="text-eyebrow">Astrophotography · 2026</p>
+              <p className="text-display mt-1 text-xl">Milky Way</p>
             </figcaption>
           </figure>
           <figure className="group relative overflow-hidden md:col-span-6">
