@@ -106,7 +106,7 @@ function KitPage() {
       <div className="mt-24 grid gap-8 border border-border bg-surface p-8 md:grid-cols-[auto,1fr] md:gap-12 md:p-12">
         <p className="text-eyebrow md:pt-3">Also in the bag</p>
         <p className="text-display text-2xl leading-relaxed md:text-3xl md:leading-snug">
-          A curated set of <span className="italic text-primary">Canon RF glass</span> covering
+          A curated set of <span className="italic text-primary">Canon EF glass</span> (adapted) covering
           wide to tele, paired with an <span className="italic text-primary">Ankerwork M650</span>{" "}
           wireless system for clean, broadcast-ready sound on the move. Every frame is finished in{" "}
           <span className="italic text-primary">DaVinci Resolve Studio</span> — edit, colour and
