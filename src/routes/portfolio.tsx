@@ -29,7 +29,7 @@ export const Route = createFileRoute("/portfolio")({
 });
 
 const projects = [
-  { title: "Live Set", cat: "Music Video", year: "2025", img: work1, span: "md:col-span-4 md:row-span-2", h: "h-[560px]" },
+  { title: "Milky Way", cat: "Astrophotography", year: "2026", img: work1, span: "md:col-span-4 md:row-span-2", h: "h-[560px]" },
   { title: "Australia Tour", cat: "Aerial", year: "2026", img: work2, span: "md:col-span-8", h: "h-[280px]" },
   { title: "Reflections", cat: "Commercial", year: "2024", img: work4, span: "md:col-span-4", h: "h-[280px]" },
   { title: "Neon Nocturne", cat: "Short Film", year: "2024", img: work5, span: "md:col-span-4", h: "h-[280px]" },
