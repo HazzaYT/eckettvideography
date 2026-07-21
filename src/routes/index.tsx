@@ -85,15 +85,15 @@ function Index() {
           <figure className="group relative overflow-hidden md:col-span-4">
             <img
               src={work2}
-              alt="Aerial coastal landscape at golden hour"
+              alt="Aerial view of the Sea Cliff Bridge on the Australia Tour"
               width={1600}
               height={1000}
               loading="lazy"
               className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
             />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-              <p className="text-eyebrow">Aerial · 2025</p>
-              <p className="text-display mt-1 text-xl">Coastal Study</p>
+              <p className="text-eyebrow">Aerial · 2026</p>
+              <p className="text-display mt-1 text-xl">Australia Tour</p>
             </figcaption>
           </figure>
           <figure className="group relative overflow-hidden md:col-span-2">
