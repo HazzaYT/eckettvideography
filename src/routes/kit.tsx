@@ -78,9 +78,10 @@ function KitPage() {
               <img
                 src={item.img}
                 alt={item.name}
-                width={1200}
-                height={900}
+                width={1600}
+                height={1200}
                 loading="lazy"
+                style={{ objectPosition: item.pos }}
                 className="aspect-[4/3] w-full object-cover"
               />
             </figure>
