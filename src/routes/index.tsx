@@ -116,15 +116,15 @@ function Index() {
           <figure className="group relative overflow-hidden md:col-span-6">
             <img
               src={work3}
-              alt="Wedding couple silhouetted at sunset"
-              width={1200}
-              height={1500}
+              alt="Feathered Fate title card in vintage cinema typography"
+              width={1600}
+              height={1200}
               loading="lazy"
-              className="h-[420px] w-full object-cover object-[50%_35%] transition duration-700 group-hover:scale-105"
+              className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
             />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-              <p className="text-eyebrow">Wedding · 2024</p>
-              <p className="text-display mt-1 text-xl">Golden Hour</p>
+              <p className="text-eyebrow">Short Film · 2024</p>
+              <p className="text-display mt-1 text-xl">Feathered Fate</p>
             </figcaption>
           </figure>
         </div>
