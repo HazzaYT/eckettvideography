@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bmpccAsset from "@/assets/kit-bmpcc.jpg.asset.json";
-import r6Asset from "@/assets/kit-r6.jpg.asset.json";
-import droneAsset from "@/assets/kit-drone.jpg.asset.json";
+import bmpccAsset from "@/assets/kit-bmpcc.png.asset.json";
+import r6Asset from "@/assets/kit-r6.png.asset.json";
+import droneAsset from "@/assets/kit-drone.png.asset.json";
 
 const bmpcc = bmpccAsset.url;
 const r6 = r6Asset.url;
@@ -74,7 +74,7 @@ function KitPage() {
             key={item.n}
             className={`grid gap-10 md:grid-cols-2 md:items-center ${i % 2 ? "md:[&>figure]:order-2" : ""}`}
           >
-            <figure className="relative overflow-hidden border border-border bg-surface">
+            <figure className="relative overflow-hidden border border-border bg-black">
               <img
                 src={item.img}
                 alt={item.name}
@@ -82,7 +82,7 @@ function KitPage() {
                 height={1200}
                 loading="lazy"
                 style={{ objectPosition: item.pos }}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-contain p-6 md:p-10"
               />
             </figure>
             <div>
