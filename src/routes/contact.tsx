@@ -46,14 +46,16 @@ function ContactPage() {
               <p className="mt-2 text-xs text-muted-foreground">Best for briefs & quotes</p>
             </a>
             <a
-              href="tel:+447490560160"
+              href="https://instagram.com/harryeckettmedia"
+              target="_blank"
+              rel="noreferrer"
               className="group block border border-border bg-surface p-6 transition hover:border-primary"
             >
-              <p className="text-eyebrow">Phone</p>
+              <p className="text-eyebrow">Instagram</p>
               <p className="text-display mt-3 text-xl text-foreground group-hover:text-primary">
-                07490 560160
+                @harryeckettmedia
               </p>
-              <p className="mt-2 text-xs text-muted-foreground">Mon–Fri · 9am–7pm</p>
+              <p className="mt-2 text-xs text-muted-foreground">DMs open · behind the scenes</p>
             </a>
           </div>
         </div>
@@ -62,7 +64,7 @@ function ContactPage() {
           <div className="border border-border bg-surface p-8">
             <p className="text-eyebrow">Currently</p>
             <p className="text-display mt-4 text-3xl">
-              Booking projects for late 2026 & Q1 2027.
+              Open books — taking on new clients as I build the roster.
             </p>
             <dl className="mt-8 space-y-4 text-sm">
               <div className="flex justify-between border-b border-border/60 pb-3">
@@ -71,7 +73,7 @@ function ContactPage() {
               </div>
               <div className="flex justify-between border-b border-border/60 pb-3">
                 <dt className="text-muted-foreground">Travel</dt>
-                <dd>Worldwide</dd>
+                <dd>UK-wide</dd>
               </div>
               <div className="flex justify-between border-b border-border/60 pb-3">
                 <dt className="text-muted-foreground">Rates</dt>
