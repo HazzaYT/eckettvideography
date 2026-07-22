@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import work1Asset from "@/assets/portfolio-astro.png.asset.json";
 import work2Asset from "@/assets/portfolio-aerial-australia.png.asset.json";
-import work4 from "@/assets/work-4.jpg";
-import work5 from "@/assets/work-5.jpg";
 import everythingAsset from "@/assets/portfolio-everything.png.asset.json";
 import featheredAsset from "@/assets/portfolio-feathered-fate.png.asset.json";
 const work6 = everythingAsset.url;
@@ -33,8 +31,6 @@ export const Route = createFileRoute("/portfolio")({
 const projects = [
   { title: "Milky Way", cat: "Astrophotography", year: "2026", img: work1, span: "md:col-span-4 md:row-span-2", h: "h-[560px]" },
   { title: "Australia Tour", cat: "Aerial", year: "2026", img: work2, span: "md:col-span-8", h: "h-[280px]" },
-  { title: "Reflections", cat: "Commercial", year: "2024", img: work4, span: "md:col-span-4", h: "h-[280px]" },
-  { title: "Neon Nocturne", cat: "Short Film", year: "2024", img: work5, span: "md:col-span-4", h: "h-[280px]" },
   { title: "Feathered Fate", cat: "Short Film", year: "2024", img: work3, span: "md:col-span-6", h: "h-[420px]" },
   { title: "Everything I Hate About Us", cat: "Short Film", year: "2026", img: work6, span: "md:col-span-6", h: "h-[420px]" },
 ];
