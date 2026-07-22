@@ -174,8 +174,13 @@ function SiteFooter() {
           <a href="mailto:harryeckett@gmail.com" className="block text-foreground hover:text-primary">
             harryeckett@gmail.com
           </a>
-          <a href="tel:+447490560160" className="block text-foreground hover:text-primary">
-            07490 560160
+          <a
+            href="https://instagram.com/harryeckettmedia"
+            target="_blank"
+            rel="noreferrer"
+            className="block text-foreground hover:text-primary"
+          >
+            @harryeckettmedia
           </a>
         </div>
         <div className="text-sm text-muted-foreground md:text-right">
