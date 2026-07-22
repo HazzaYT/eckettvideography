@@ -35,7 +35,7 @@ const projects = [
   { title: "Australia Tour", cat: "Aerial", year: "2026", img: work2, span: "md:col-span-8", h: "h-[280px]" },
   { title: "Reflections", cat: "Commercial", year: "2024", img: work4, span: "md:col-span-4", h: "h-[280px]" },
   { title: "Neon Nocturne", cat: "Short Film", year: "2024", img: work5, span: "md:col-span-4", h: "h-[280px]" },
-  { title: "Golden Hour", cat: "Wedding", year: "2024", img: work3, span: "md:col-span-6", h: "h-[420px]" },
+  { title: "Feathered Fate", cat: "Short Film", year: "2024", img: work3, span: "md:col-span-6", h: "h-[420px]" },
   { title: "Everything I Hate About Us", cat: "Short Film", year: "2026", img: work6, span: "md:col-span-6", h: "h-[420px]" },
 ];
 
