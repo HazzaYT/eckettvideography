@@ -7,12 +7,12 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Get in touch with Harry Eckett — freelance videographer and editor. Email harryeckett@gmail.com or call 07490 560160.",
+          "Get in touch with Harry Eckett — freelance videographer and editor. Email harryeckett@gmail.com or DM @harryeckettmedia on Instagram.",
       },
       { property: "og:title", content: "Contact — Harry Eckett" },
       {
         property: "og:description",
-        content: "Email harryeckett@gmail.com or call 07490 560160.",
+        content: "Email harryeckett@gmail.com or DM @harryeckettmedia on Instagram.",
       },
     ],
   }),
