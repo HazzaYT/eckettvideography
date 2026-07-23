@@ -12,7 +12,7 @@ function Index() {
   return (
     <div>
       {/* Hero */}
-      <section className="grain relative isolate overflow-hidden">
+      <section className="grain relative isolate mx-auto mt-4 max-w-[95rem] overflow-hidden rounded-3xl md:mt-6">
         <img
           src={heroImg}
           alt="Videographer operating a cinema camera under warm and cool cinematic lighting"
@@ -36,13 +36,13 @@ function Index() {
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
               to="/portfolio"
-              className="inline-flex items-center border border-primary bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:bg-transparent hover:text-primary"
+              className="inline-flex items-center rounded-full border border-primary bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:bg-transparent hover:text-primary"
             >
               View portfolio →
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center border border-border bg-transparent px-6 py-3 text-sm font-medium text-foreground transition hover:border-primary hover:text-primary"
+              className="inline-flex items-center rounded-full border border-border bg-transparent px-6 py-3 text-sm font-medium text-foreground transition hover:border-primary hover:text-primary"
             >
               Start a project
             </Link>
