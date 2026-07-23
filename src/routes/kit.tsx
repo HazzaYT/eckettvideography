@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bmpccAsset from "@/assets/kit-bmpcc.png.asset.json";
-import r6Asset from "@/assets/kit-r6.png.asset.json";
-import droneAsset from "@/assets/kit-drone.png.asset.json";
+import bmpccAsset from "@/assets/image-Photoroom.png.asset.json";
+import r6Asset from "@/assets/5666C028_EOS-R6-Mark-II_01-Photoroom.png.asset.json";
+import droneAsset from "@/assets/6bd76757e0f2c43867d582aa191ae836-Photoroom.png.asset.json";
 
 const bmpcc = bmpccAsset.url;
 const r6 = r6Asset.url;
