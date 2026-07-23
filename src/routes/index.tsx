@@ -156,17 +156,19 @@ function Index() {
             { name: "RCM Agency", note: "Production · Local partner", logo: rcmLogo },
             { name: "ABRSM", note: "Music education · Event coverage", logo: abrsmLogo },
           ].map((c) => {
-            const isDarkBg = c.name === "RCM Agency";
+            const bg =
+              c.name === "RCM Agency"
+                ? "bg-[#12294a]"
+                : c.name === "ABRSM"
+                  ? "bg-[#f6f1e7]"
+                  : "bg-white";
             return (
               <li
                 key={c.name}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 transition hover:border-primary"
               >
-                <div
-                  className={`flex aspect-[4/3] w-full items-center justify-center p-6 ${
-                    isDarkBg ? "bg-[#0b2038]" : "bg-white"
-                  }`}
-                >
+                <div className={`flex aspect-[4/3] w-full items-center justify-center p-6 ${bg}`}>
+
                   <img
                     src={c.logo}
                     alt={`${c.name} logo`}
