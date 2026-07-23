@@ -1,12 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImgAsset from "@/assets/20230118_130323.jpg.asset.json";
 const heroImg = heroImgAsset.url;
-import work1Asset from "@/assets/Screenshot 2026-07-21 at 20.05.55.png.asset.json";
-const work1 = work1Asset.url;
-import work2Asset from "@/assets/Screenshot 2026-07-21 at 20.01.11.png.asset.json";
-const work2 = work2Asset.url;
-import featheredAsset from "@/assets/Screenshot 2026-07-22 at 14.15.45.png.asset.json";
-const work3 = featheredAsset.url;
+
+
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -72,63 +68,53 @@ function Index() {
         </div>
       </section>
 
-      {/* Featured work */}
+      {/* Clients */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
-        <div className="flex items-end justify-between">
+        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="text-eyebrow">Selected work</p>
-            <h2 className="text-display mt-3 text-4xl md:text-5xl">Recent frames.</h2>
+            <p className="text-eyebrow">Selected clients</p>
+            <h2 className="text-display mt-3 text-4xl md:text-5xl">
+              Who I've made
+              <br />
+              <span className="italic text-primary">content for.</span>
+            </h2>
           </div>
-          <Link to="/portfolio" className="text-sm text-muted-foreground hover:text-primary">
-            All projects →
-          </Link>
+          <p className="max-w-sm text-sm text-muted-foreground">
+            A short list of the brands, broadcasters and production teams I've
+            been lucky enough to point a camera at.
+          </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-6">
-          <figure className="group relative overflow-hidden md:col-span-4">
-            <img
-              src={work2}
-              alt="Aerial view of the Sea Cliff Bridge on the Australia Tour"
-              width={1600}
-              height={1000}
-              loading="lazy"
-              className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
-            />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-              <p className="text-eyebrow">Aerial · 2026</p>
-              <p className="text-display mt-1 text-xl">Australia Tour</p>
-            </figcaption>
-          </figure>
-          <figure className="group relative overflow-hidden md:col-span-2">
-            <img
-              src={work1}
-              alt="Milky Way stretching across a deep night sky"
-              width={1200}
-              height={1500}
-              loading="lazy"
-              className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
-            />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-              <p className="text-eyebrow">Astrophotography · 2026</p>
-              <p className="text-display mt-1 text-xl">Milky Way</p>
-            </figcaption>
-          </figure>
-          <figure className="group relative overflow-hidden md:col-span-6">
-            <img
-              src={work3}
-              alt="Feathered Fate title card in vintage cinema typography"
-              width={1600}
-              height={1200}
-              loading="lazy"
-              className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
-            />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-              <p className="text-eyebrow">Short Film · 2024</p>
-              <p className="text-display mt-1 text-xl">Feathered Fate</p>
-            </figcaption>
-          </figure>
+        <ul className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-border/60 bg-border sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { name: "BBC Gardeners' World Live", note: "Broadcast · Event coverage" },
+            { name: "Good Food Show Summer", note: "Event · Sponsored content" },
+            { name: "University of Hertfordshire", note: "Education · Campus films" },
+            { name: "WaterAid", note: "Charity · Campaign films" },
+            { name: "RCM Agency", note: "Production · Local partner" },
+            { name: "& independent artists", note: "Music video · Short film" },
+          ].map((c) => (
+            <li
+              key={c.name}
+              className="group flex min-h-[140px] flex-col justify-between bg-background p-8 transition hover:bg-surface"
+            >
+              <p className="text-display text-2xl leading-tight text-foreground transition group-hover:text-primary md:text-[28px]">
+                {c.name}
+              </p>
+              <p className="mt-6 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                {c.note}
+              </p>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-12 flex justify-end">
+          <Link to="/portfolio" className="text-sm text-muted-foreground hover:text-primary">
+            See the work →
+          </Link>
         </div>
       </section>
+
     </div>
   );
 }
