@@ -149,36 +149,38 @@ function Index() {
 
         <ul className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3">
           {[
-            { name: "BBC Gardeners' World Live", note: "Broadcast · Event coverage", logo: null },
-            { name: "Good Food Show Summer", note: "Event · Sponsored content", logo: null },
-            { name: "University of Hertfordshire", note: "Education · Campus films", logo: null },
-            { name: "WaterAid", note: "Charity · Campaign films", logo: null },
+            { name: "BBC Gardeners' World Live", note: "Broadcast · Event coverage", logo: gardenersLogo },
+            { name: "BBC Good Food Show Summer", note: "Event · Sponsored content", logo: goodFoodLogo },
+            { name: "University of Hertfordshire", note: "Education · Campus films", logo: hertsLogo },
+            { name: "WaterAid", note: "Charity · Campaign films", logo: wateraidLogo },
             { name: "RCM Agency", note: "Production · Local partner", logo: rcmLogo },
-            { name: "Independent artists", note: "Music video · Short film", logo: null },
-          ].map((c) => (
-            <li
-              key={c.name}
-              className="group flex min-h-[160px] flex-col items-center justify-center gap-4 rounded-2xl border border-border/60 bg-surface p-8 text-center transition hover:border-primary"
-            >
-              <div className="flex h-16 w-full items-center justify-center">
-                {c.logo ? (
+            { name: "ABRSM", note: "Music education · Event coverage", logo: abrsmLogo },
+          ].map((c) => {
+            const isDarkBg = c.name === "RCM Agency";
+            return (
+              <li
+                key={c.name}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 transition hover:border-primary"
+              >
+                <div
+                  className={`flex aspect-[4/3] w-full items-center justify-center p-6 ${
+                    isDarkBg ? "bg-[#0b2038]" : "bg-white"
+                  }`}
+                >
                   <img
                     src={c.logo}
                     alt={`${c.name} logo`}
-                    className="max-h-16 max-w-[80%] object-contain"
+                    className="max-h-full max-w-full object-contain"
                   />
-                ) : (
-                  <p className="text-display text-xl leading-tight text-foreground transition group-hover:text-primary md:text-2xl">
-                    {c.name}
-                  </p>
-                )}
-              </div>
-              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                {c.note}
-              </p>
-            </li>
-          ))}
+                </div>
+                <p className="border-t border-border/60 bg-surface px-4 py-3 text-center text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+                  {c.note}
+                </p>
+              </li>
+            );
+          })}
         </ul>
+
 
 
         <div className="mt-12 flex justify-end">
