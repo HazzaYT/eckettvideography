@@ -55,7 +55,7 @@ function PortfolioPage() {
         {projects.map((p) => (
           <figure
             key={p.title}
-            className={`group relative overflow-hidden border border-border/60 ${p.span}`}
+            className={`group relative overflow-hidden rounded-2xl border border-border/60 ${p.span}`}
           >
             <img
               src={p.img}
