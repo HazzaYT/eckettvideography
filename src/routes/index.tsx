@@ -68,6 +68,52 @@ function Index() {
         </div>
       </section>
 
+      {/* Approach */}
+      <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
+        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <p className="text-eyebrow">How I shoot</p>
+            <h2 className="text-display mt-3 text-4xl md:text-5xl">
+              Industry kit,
+              <br />
+              <span className="italic text-primary">quietly held.</span>
+            </h2>
+          </div>
+          <p className="max-w-sm text-sm text-muted-foreground">
+            The gear list is boring. What matters is that every project is shot
+            and finished to a professional standard — insured, legal, and built
+            to hold up on any screen.
+          </p>
+        </div>
+
+        <div className="mt-14 grid gap-px overflow-hidden border border-border/60 bg-border md:grid-cols-3">
+          {[
+            {
+              k: "Capture",
+              t: "Cinema-grade cameras",
+              d: "Full-frame and Super 35 sensors with a filmic latitude and shallow depth of field.",
+            },
+            {
+              k: "Aerial",
+              t: "Licensed drone platform",
+              d: "CAA-registered and fully insured aerial work, flown safely in complex environments.",
+            },
+            {
+              k: "Finish",
+              t: "Colour-graded in a pro suite",
+              d: "Every deliverable finished on a calibrated pipeline, broadcast-ready out of the box.",
+            },
+          ].map((a) => (
+            <div key={a.k} className="bg-background p-8">
+              <p className="text-eyebrow">{a.k}</p>
+              <p className="text-display mt-3 text-2xl">{a.t}</p>
+              <p className="mt-3 text-sm text-muted-foreground">{a.d}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
       {/* Clients */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
