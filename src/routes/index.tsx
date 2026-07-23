@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImgAsset from "@/assets/20250603_191954.jpg.asset.json";
+import rcmLogoAsset from "@/assets/logo-rcm.webp.asset.json";
 const heroImg = heroImgAsset.url;
+const rcmLogo = rcmLogoAsset.url;
+
 
 
 
