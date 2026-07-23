@@ -37,7 +37,7 @@ function ContactPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             <a
               href="mailto:harryeckett@gmail.com"
-              className="group block border border-border bg-surface p-6 transition hover:border-primary"
+              className="group block rounded-2xl border border-border bg-surface p-6 transition hover:border-primary"
             >
               <p className="text-eyebrow">Email</p>
               <p className="text-display mt-3 text-xl text-foreground group-hover:text-primary">
@@ -49,7 +49,7 @@ function ContactPage() {
               href="https://instagram.com/harryeckettmedia"
               target="_blank"
               rel="noreferrer"
-              className="group block border border-border bg-surface p-6 transition hover:border-primary"
+              className="group block rounded-2xl border border-border bg-surface p-6 transition hover:border-primary"
             >
               <p className="text-eyebrow">Instagram</p>
               <p className="text-display mt-3 text-xl text-foreground group-hover:text-primary">
@@ -61,7 +61,7 @@ function ContactPage() {
         </div>
 
         <aside className="md:col-span-5">
-          <div className="border border-border bg-surface p-8">
+          <div className="rounded-2xl border border-border bg-surface p-8">
             <p className="text-eyebrow">Currently</p>
             <p className="text-display mt-4 text-3xl">
               Open books — taking on new clients as I build the roster.
