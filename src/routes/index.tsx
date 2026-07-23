@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImgAsset from "@/assets/hero.jpg.asset.json";
+import heroImgAsset from "@/assets/20230118_130323.jpg.asset.json";
 const heroImg = heroImgAsset.url;
-import work1Asset from "@/assets/portfolio-astro.png.asset.json";
+import work1Asset from "@/assets/Screenshot 2026-07-21 at 20.05.55.png.asset.json";
 const work1 = work1Asset.url;
-import work2Asset from "@/assets/portfolio-aerial-australia.png.asset.json";
+import work2Asset from "@/assets/Screenshot 2026-07-21 at 20.01.11.png.asset.json";
 const work2 = work2Asset.url;
-import featheredAsset from "@/assets/portfolio-feathered-fate.png.asset.json";
+import featheredAsset from "@/assets/Screenshot 2026-07-22 at 14.15.45.png.asset.json";
 const work3 = featheredAsset.url;
 
 export const Route = createFileRoute("/")({
