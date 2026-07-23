@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImgAsset from "@/assets/20230118_130323.jpg.asset.json";
+import heroImgAsset from "@/assets/20250603_191954.jpg.asset.json";
 const heroImg = heroImgAsset.url;
 
 
@@ -15,12 +15,15 @@ function Index() {
       <section className="grain relative isolate mx-auto mt-4 max-w-[95rem] overflow-hidden rounded-3xl md:mt-6">
         <img
           src={heroImg}
-          alt="Videographer operating a cinema camera under warm and cool cinematic lighting"
+          alt="Cinema camera on a tripod overlooking a UK coastal village at dusk"
           width={1920}
           height={1280}
-          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-45"
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60"
+          style={{ objectPosition: "center 40%" }}
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/40 via-background/70 to-background" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/85 via-background/55 to-background/30" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-background/30 to-background" />
+
         <div className="mx-auto max-w-7xl px-6 pb-28 pt-24 md:px-10 md:pb-40 md:pt-36">
           <p className="text-eyebrow">Freelance videographer & editor</p>
           <h1 className="text-display mt-6 text-5xl text-foreground md:text-8xl">
