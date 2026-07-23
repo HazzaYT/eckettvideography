@@ -58,7 +58,7 @@ function Index() {
         <div className="grid gap-4 md:grid-cols-4">
           {[
             { k: "01", t: "Commercial", d: "Brand films & spots" },
-            { k: "02", t: "Music Video", d: "Concept to colour" },
+            { k: "02", t: "Short Films", d: "Concept to colour" },
             { k: "03", t: "Weddings", d: "Cinematic edits" },
             { k: "04", t: "Aerial", d: "Licensed drone work" },
           ].map((s) => (
