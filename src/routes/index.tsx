@@ -1,8 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImgAsset from "@/assets/20250603_191954.jpg.asset.json";
 import rcmLogoAsset from "@/assets/logo-rcm.webp.asset.json";
+import gardenersLogoAsset from "@/assets/logo-gardeners-world.jpeg.asset.json";
+import goodFoodLogoAsset from "@/assets/logo-good-food.jpeg.asset.json";
+import wateraidLogoAsset from "@/assets/logo-wateraid.jpeg.asset.json";
+import hertsLogoAsset from "@/assets/logo-herts.jpg.asset.json";
+import abrsmLogoAsset from "@/assets/logo-abrsm.jpeg.asset.json";
 const heroImg = heroImgAsset.url;
 const rcmLogo = rcmLogoAsset.url;
+const gardenersLogo = gardenersLogoAsset.url;
+const goodFoodLogo = goodFoodLogoAsset.url;
+const wateraidLogo = wateraidLogoAsset.url;
+const hertsLogo = hertsLogoAsset.url;
+const abrsmLogo = abrsmLogoAsset.url;
+
 
 
 
