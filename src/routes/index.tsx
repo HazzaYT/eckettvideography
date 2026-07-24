@@ -95,7 +95,7 @@ function Index() {
               <h2 className="text-display mt-3 text-4xl md:text-5xl">
                 Hi, I'm Harry.
                 <br />
-                <span className="italic text-primary">Cardiff-based.</span>
+                <span className="italic text-primary">The short version.</span>
               </h2>
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -112,10 +112,11 @@ function Index() {
                 Southampton and Winchester and a longer list of brand and event work.
               </p>
               <p>
-                I'm also a travel videographer at heart — I've filmed across the
+                I'm also a travel videographer at heart. I've filmed across the
                 USA, Canada, Australia, Iceland and Czechia, and I'm always looking
                 for the next country to point a lens at.
               </p>
+
             </div>
           </div>
         </div>
