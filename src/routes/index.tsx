@@ -53,10 +53,11 @@ function Index() {
             <span className="italic text-primary">in motion.</span>
           </h1>
           <p className="mt-8 max-w-xl text-base text-muted-foreground md:text-lg">
-            I'm Harry — a UK-based videographer shooting cinematic films,
-            commercials and aerial work, then cutting them into pieces people
-            actually finish watching.
+            I'm Harry. I am a UK-based videographer with 7 years of educational
+            and industry experience shooting commercial, brand and lifestyle
+            video content.
           </p>
+
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
               to="/portfolio"
