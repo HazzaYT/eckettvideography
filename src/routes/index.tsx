@@ -206,13 +206,14 @@ function Index() {
             <h2 className="text-display mt-3 text-4xl md:text-5xl">
               Industry kit,
               <br />
-              <span className="italic text-primary">quietly held.</span>
+              <span className="italic text-primary">used well.</span>
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted-foreground">
-            Every project is captured and finished to a professional standard —
+            Every project is captured and finished to a professional standard,
             insured, legal, and built to hold up on any screen.
           </p>
+
         </div>
 
         <div className="mt-14 grid gap-4 md:grid-cols-3">
