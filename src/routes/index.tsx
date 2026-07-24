@@ -72,25 +72,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Visual band */}
-      <section className="mx-auto mt-6 grid max-w-[95rem] gap-4 px-0 md:mt-8 md:grid-cols-5">
-        <figure className="relative overflow-hidden rounded-3xl md:col-span-3 md:aspect-[16/10]">
-          <img
-            src={btsClarinet}
-            alt="Blackmagic 6K Pro on a Manfrotto gimbal filming a woodwind ensemble"
-            className="h-full w-full object-cover"
-          />
-        </figure>
-        <figure className="relative overflow-hidden rounded-3xl md:col-span-2 md:aspect-[16/10]">
-          <img
-            src={aboutHarry}
-            alt="Harry checking a shot on the Blackmagic 6K Pro on location"
-            className="h-full w-full object-cover"
-            style={{ objectPosition: "center 30%" }}
-          />
-        </figure>
-      </section>
-
       {/* About */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
         <div className="grid gap-12 md:grid-cols-[1fr_1.3fr] md:gap-16">
@@ -122,10 +103,28 @@ function Index() {
             </p>
           </div>
         </div>
+
+        {/* Portrait beneath about — cropped 4:3 */}
+        <figure className="relative mt-14 overflow-hidden rounded-3xl aspect-[4/3] md:aspect-[3/2]">
+          <img
+            src={aboutHarry}
+            alt="Harry on location with the camera"
+            className="h-full w-full object-cover"
+            style={{ objectPosition: "center 35%" }}
+          />
+        </figure>
       </section>
 
 
-      <section className="mx-auto mt-16 max-w-7xl px-6 md:px-10">
+      <section className="relative isolate mx-auto mt-16 max-w-7xl overflow-hidden rounded-3xl px-6 py-16 md:px-10">
+        <img
+          src={btsClarinet}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-15"
+        />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/90 via-background/80 to-background/95" />
+
         <div className="grid gap-4 md:grid-cols-4">
           {[
             { k: "01", t: "Commercial", d: "Brand films & spots" },
