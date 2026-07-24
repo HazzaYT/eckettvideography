@@ -256,9 +256,9 @@ function Index() {
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted-foreground">
-            A short list of the brands, broadcasters and production teams I've
-            been lucky enough to point a camera at.
+            A few of the teams I've worked with.
           </p>
+
         </div>
 
         <ul className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3">
