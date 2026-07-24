@@ -53,10 +53,11 @@ function Index() {
             <span className="italic text-primary">in motion.</span>
           </h1>
           <p className="mt-8 max-w-xl text-base text-muted-foreground md:text-lg">
-            I'm Harry — a UK-based videographer shooting cinematic films,
-            commercials and aerial work, then cutting them into pieces people
-            actually finish watching.
+            I'm Harry. I am a UK-based videographer with 7 years of educational
+            and industry experience shooting commercial, brand and lifestyle
+            video content.
           </p>
+
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
               to="/portfolio"
@@ -94,7 +95,7 @@ function Index() {
               <h2 className="text-display mt-3 text-4xl md:text-5xl">
                 Hi, I'm Harry.
                 <br />
-                <span className="italic text-primary">Cardiff-based.</span>
+                <span className="italic text-primary">The short version.</span>
               </h2>
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -111,10 +112,11 @@ function Index() {
                 Southampton and Winchester and a longer list of brand and event work.
               </p>
               <p>
-                I'm also a travel videographer at heart — I've filmed across the
+                I'm also a travel videographer at heart. I've filmed across the
                 USA, Canada, Australia, Iceland and Czechia, and I'm always looking
                 for the next country to point a lens at.
               </p>
+
             </div>
           </div>
         </div>
@@ -204,13 +206,14 @@ function Index() {
             <h2 className="text-display mt-3 text-4xl md:text-5xl">
               Industry kit,
               <br />
-              <span className="italic text-primary">quietly held.</span>
+              <span className="italic text-primary">used well.</span>
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted-foreground">
-            Every project is captured and finished to a professional standard —
+            Every project is captured and finished to a professional standard,
             insured, legal, and built to hold up on any screen.
           </p>
+
         </div>
 
         <div className="mt-14 grid gap-4 md:grid-cols-3">
@@ -253,9 +256,9 @@ function Index() {
             </h2>
           </div>
           <p className="max-w-sm text-sm text-muted-foreground">
-            A short list of the brands, broadcasters and production teams I've
-            been lucky enough to point a camera at.
+            A few of the teams I've worked with.
           </p>
+
         </div>
 
         <ul className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3">
