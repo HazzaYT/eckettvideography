@@ -278,7 +278,9 @@ function Index() {
                 key={c.name}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 transition hover:border-primary"
               >
-                <div className={`flex aspect-[4/3] w-full items-center justify-center overflow-hidden p-8 ${bg}`}>
+                <div className={`flex aspect-[4/3] w-full items-center justify-center overflow-hidden ${
+                  c.name === "BBC Gardeners' World Live" || c.name === "BBC Good Food Show Summer" ? "p-3" : "p-8"
+                } ${bg}`}>
                   <img
                     src={c.logo}
                     alt={`${c.name} logo`}
