@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImgAsset from "@/assets/20250603_191954.jpg.asset.json";
+import aboutHarryAsset from "@/assets/about-harry.jpg.asset.json";
+import btsClarinetAsset from "@/assets/bts-clarinet.jpg.asset.json";
 import rcmLogoAsset from "@/assets/logo-rcm.webp.asset.json";
 import gardenersLogoAsset from "@/assets/logo-gardeners-world.jpeg.asset.json";
 import goodFoodLogoAsset from "@/assets/logo-good-food.jpeg.asset.json";
@@ -7,12 +9,15 @@ import wateraidLogoAsset from "@/assets/logo-wateraid.jpeg.asset.json";
 import hertsLogoAsset from "@/assets/logo-herts.jpg.asset.json";
 import abrsmLogoAsset from "@/assets/logo-abrsm.jpeg.asset.json";
 const heroImg = heroImgAsset.url;
+const aboutHarry = aboutHarryAsset.url;
+const btsClarinet = btsClarinetAsset.url;
 const rcmLogo = rcmLogoAsset.url;
 const gardenersLogo = gardenersLogoAsset.url;
 const goodFoodLogo = goodFoodLogoAsset.url;
 const wateraidLogo = wateraidLogoAsset.url;
 const hertsLogo = hertsLogoAsset.url;
 const abrsmLogo = abrsmLogoAsset.url;
+
 
 
 
@@ -67,7 +72,59 @@ function Index() {
         </div>
       </section>
 
-      {/* Services strip */}
+      {/* Visual band */}
+      <section className="mx-auto mt-6 grid max-w-[95rem] gap-4 px-0 md:mt-8 md:grid-cols-5">
+        <figure className="relative overflow-hidden rounded-3xl md:col-span-3 md:aspect-[16/10]">
+          <img
+            src={btsClarinet}
+            alt="Blackmagic 6K Pro on a Manfrotto gimbal filming a woodwind ensemble"
+            className="h-full w-full object-cover"
+          />
+        </figure>
+        <figure className="relative overflow-hidden rounded-3xl md:col-span-2 md:aspect-[16/10]">
+          <img
+            src={aboutHarry}
+            alt="Harry checking a shot on the Blackmagic 6K Pro on location"
+            className="h-full w-full object-cover"
+            style={{ objectPosition: "center 30%" }}
+          />
+        </figure>
+      </section>
+
+      {/* About */}
+      <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
+        <div className="grid gap-12 md:grid-cols-[1fr_1.3fr] md:gap-16">
+          <div>
+            <p className="text-eyebrow">About</p>
+            <h2 className="text-display mt-3 text-4xl md:text-5xl">
+              Hi, I'm Harry.
+              <br />
+              <span className="italic text-primary">Cardiff-based.</span>
+            </h2>
+          </div>
+          <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p>
+              I'm a videographer and editor with a First Class Honours degree in
+              Film & Television Production, specialising in camera operation and
+              editing. Five years behind the camera, four of them on commercial
+              work, and a lot of quiet hours in the grade.
+            </p>
+            <p>
+              I spent several years with a local production agency covering
+              BBC <em>Gardeners' World Live</em> and the <em>BBC Good Food Show
+              Summer</em> in 2024 and 2025, alongside university films for
+              Southampton and Winchester and a longer list of brand and event work.
+            </p>
+            <p>
+              I'm also a travel videographer at heart — I've filmed across the
+              USA, Canada, Australia, Iceland and Czechia, and I'm always looking
+              for the next country to point a lens at.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
       <section className="mx-auto mt-16 max-w-7xl px-6 md:px-10">
         <div className="grid gap-4 md:grid-cols-4">
           {[
