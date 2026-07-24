@@ -1,4 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Clapperboard, Film, Heart, Plane } from "lucide-react";
+
 import heroImgAsset from "@/assets/20250603_191954.jpg.asset.json";
 import aboutHarryAsset from "@/assets/about-harry.jpg.asset.json";
 import btsClarinetAsset from "@/assets/bts-clarinet.jpg.asset.json";
