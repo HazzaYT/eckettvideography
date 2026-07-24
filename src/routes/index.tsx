@@ -136,28 +136,28 @@ function Index() {
             {
               t: "Planning",
               Icon: Lightbulb,
-              d: "I can work to a tight brief or shape the creative from scratch — pre-production, shot lists and treatments built around what you actually need.",
+              d: "I can work to a brief you already have or help build one from scratch.",
               accent: false,
               bg: "bg-background",
             },
             {
               t: "Camera Operation",
               Icon: Camera,
-              d: "Five years operating professional cinema and mirrorless cameras across commercials, events and narrative work — steady, considered, on brief.",
+              d: "Five years shooting professionally on cinema and mirrorless cameras.",
               accent: true,
               bg: "bg-surface",
             },
             {
               t: "Editing",
               Icon: Scissors,
-              d: "Full post-production in DaVinci Resolve Studio — edit, sound and a proper colour grade delivered on a calibrated pipeline.",
+              d: "Full edit, sound and colour grade in DaVinci Resolve Studio.",
               accent: false,
               bg: "bg-background",
             },
             {
               t: "Strategy",
               Icon: Compass,
-              d: "Guidance on how the finished film lands — format, pacing and platform, so the work reaches the audience it was made for.",
+              d: "Guidance on format and pacing so your film lands with the right audience.",
               accent: true,
               bg: "bg-primary text-primary-foreground",
             },
@@ -276,17 +276,16 @@ function Index() {
             return (
               <li
                 key={c.name}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 transition hover:border-primary"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 transition hover:border-primary"
               >
-                <div className={`flex aspect-[4/3] w-full items-center justify-center p-6 ${bg}`}>
-
+                <div className={`flex aspect-[4/3] w-full items-center justify-center overflow-hidden p-8 ${bg}`}>
                   <img
                     src={c.logo}
                     alt={`${c.name} logo`}
-                    className="max-h-full max-w-full object-contain"
+                    className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="border-t border-border/60 bg-surface px-4 py-3 text-center text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="mt-auto border-t border-border/60 bg-surface px-4 py-3 text-center text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                   {c.note}
                 </p>
               </li>
