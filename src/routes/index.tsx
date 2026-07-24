@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Clapperboard, Film, Heart, Plane } from "lucide-react";
+import { Lightbulb, Camera, Scissors, Compass } from "lucide-react";
 
 import heroImgAsset from "@/assets/20250603_191954.jpg.asset.json";
 import aboutHarryAsset from "@/assets/about-harry.jpg.asset.json";
@@ -134,30 +134,30 @@ function Index() {
         <div className="grid grid-cols-1 md:grid-cols-4">
           {[
             {
-              t: "Commercial",
-              Icon: Clapperboard,
-              d: "I work to a tight brief or shape the creative from scratch — brand films, spots and social cutdowns finished to broadcast standard.",
+              t: "Planning",
+              Icon: Lightbulb,
+              d: "I can work to a tight brief or shape the creative from scratch — pre-production, shot lists and treatments built around what you actually need.",
               accent: false,
               bg: "bg-background",
             },
             {
-              t: "Short Films",
-              Icon: Film,
-              d: "Narrative work from concept and camera through to a fully colour-graded master, treated with the same care as any commercial job.",
+              t: "Camera Operation",
+              Icon: Camera,
+              d: "Five years operating professional cinema and mirrorless cameras across commercials, events and narrative work — steady, considered, on brief.",
               accent: true,
               bg: "bg-surface",
             },
             {
-              t: "Weddings",
-              Icon: Heart,
-              d: "Cinematic, unhurried wedding films — the day as it actually felt, cut into something you'll want to sit down and watch again.",
+              t: "Editing",
+              Icon: Scissors,
+              d: "Full post-production in DaVinci Resolve Studio — edit, sound and a proper colour grade delivered on a calibrated pipeline.",
               accent: false,
               bg: "bg-background",
             },
             {
-              t: "Aerial",
-              Icon: Plane,
-              d: "CAA-registered and fully insured drone work, flown safely in complex environments and delivered in the same graded pipeline.",
+              t: "Strategy",
+              Icon: Compass,
+              d: "Guidance on how the finished film lands — format, pacing and platform, so the work reaches the audience it was made for.",
               accent: true,
               bg: "bg-primary text-primary-foreground",
             },
