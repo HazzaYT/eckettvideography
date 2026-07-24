@@ -78,11 +78,12 @@ function Index() {
           src={aboutHarry}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-55"
           style={{ objectPosition: "center 30%" }}
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/90 via-background/75 to-background/60" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/60 to-background/90" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/80 via-background/55 to-background/30" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/40 via-background/30 to-background/70" />
+
 
         <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
           <div className="grid gap-12 md:grid-cols-[1fr_1.3fr] md:gap-16">
