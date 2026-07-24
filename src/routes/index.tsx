@@ -95,7 +95,7 @@ function Index() {
               <h2 className="text-display mt-3 text-4xl md:text-5xl">
                 Hi, I'm Harry.
                 <br />
-                <span className="italic text-primary">The short version.</span>
+                <span className="italic text-primary">About me.</span>
               </h2>
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
