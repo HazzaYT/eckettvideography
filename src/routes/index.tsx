@@ -1,4 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Clapperboard, Film, Heart, Plane } from "lucide-react";
+
 import heroImgAsset from "@/assets/20250603_191954.jpg.asset.json";
 import aboutHarryAsset from "@/assets/about-harry.jpg.asset.json";
 import btsClarinetAsset from "@/assets/bts-clarinet.jpg.asset.json";
@@ -120,30 +122,79 @@ function Index() {
 
 
 
-      <section className="relative isolate mx-auto mt-16 max-w-7xl overflow-hidden rounded-3xl px-6 py-16 md:px-10">
+      <section className="relative isolate mx-auto mt-16 max-w-[95rem] overflow-hidden rounded-3xl">
         <img
           src={btsClarinet}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-15"
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-10"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/90 via-background/80 to-background/95" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
 
-        <div className="grid gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-4">
           {[
-            { k: "01", t: "Commercial", d: "Brand films & spots" },
-            { k: "02", t: "Short Films", d: "Concept to colour" },
-            { k: "03", t: "Weddings", d: "Cinematic edits" },
-            { k: "04", t: "Aerial", d: "Licensed drone work" },
+            {
+              t: "Commercial",
+              Icon: Clapperboard,
+              d: "I work to a tight brief or shape the creative from scratch — brand films, spots and social cutdowns finished to broadcast standard.",
+              accent: false,
+              bg: "bg-background",
+            },
+            {
+              t: "Short Films",
+              Icon: Film,
+              d: "Narrative work from concept and camera through to a fully colour-graded master, treated with the same care as any commercial job.",
+              accent: true,
+              bg: "bg-surface",
+            },
+            {
+              t: "Weddings",
+              Icon: Heart,
+              d: "Cinematic, unhurried wedding films — the day as it actually felt, cut into something you'll want to sit down and watch again.",
+              accent: false,
+              bg: "bg-background",
+            },
+            {
+              t: "Aerial",
+              Icon: Plane,
+              d: "CAA-registered and fully insured drone work, flown safely in complex environments and delivered in the same graded pipeline.",
+              accent: true,
+              bg: "bg-primary text-primary-foreground",
+            },
           ].map((s) => (
-            <div key={s.k} className="rounded-2xl border border-border/60 bg-surface p-8">
-              <p className="text-eyebrow">{s.k}</p>
-              <p className="text-display mt-3 text-2xl">{s.t}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{s.d}</p>
+            <div
+              key={s.t}
+              className={`flex flex-col items-center px-8 py-14 text-center md:px-10 md:py-20 ${s.bg}`}
+            >
+              <s.Icon
+                strokeWidth={1.25}
+                className={`h-14 w-14 ${s.bg.includes("bg-primary") ? "text-primary-foreground" : "text-foreground"}`}
+              />
+              <p
+                className={`text-display mt-8 text-lg uppercase tracking-[0.28em] ${
+                  s.bg.includes("bg-primary")
+                    ? "text-primary-foreground"
+                    : s.accent
+                      ? "text-primary"
+                      : "text-foreground"
+                }`}
+              >
+                {s.t}
+              </p>
+              <p
+                className={`mt-5 max-w-[22ch] text-sm leading-relaxed ${
+                  s.bg.includes("bg-primary")
+                    ? "text-primary-foreground/85"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {s.d}
+              </p>
             </div>
           ))}
         </div>
       </section>
+
 
       {/* Approach */}
       <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
