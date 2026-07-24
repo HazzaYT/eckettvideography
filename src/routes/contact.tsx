@@ -69,8 +69,9 @@ function ContactPage() {
             <dl className="mt-8 space-y-4 text-sm">
               <div className="flex justify-between border-b border-border/60 pb-3">
                 <dt className="text-muted-foreground">Based</dt>
-                <dd>United Kingdom</dd>
+                <dd>Cardiff, UK</dd>
               </div>
+
               <div className="flex justify-between border-b border-border/60 pb-3">
                 <dt className="text-muted-foreground">Travel</dt>
                 <dd>UK-wide</dd>
