@@ -73,47 +73,50 @@ function Index() {
       </section>
 
       {/* About */}
-      <section className="mx-auto max-w-7xl px-6 py-24 md:px-10">
-        <div className="grid gap-12 md:grid-cols-[1fr_1.3fr] md:gap-16">
-          <div>
-            <p className="text-eyebrow">About</p>
-            <h2 className="text-display mt-3 text-4xl md:text-5xl">
-              Hi, I'm Harry.
-              <br />
-              <span className="italic text-primary">Cardiff-based.</span>
-            </h2>
-          </div>
-          <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-            <p>
-              I'm a videographer and editor with a First Class Honours degree in
-              Film & Television Production, specialising in camera operation and
-              editing. Five years behind the camera, four of them on commercial
-              work, and a lot of quiet hours in the grade.
-            </p>
-            <p>
-              I spent several years with a local production agency covering
-              BBC <em>Gardeners' World Live</em> and the <em>BBC Good Food Show
-              Summer</em> in 2024 and 2025, alongside university films for
-              Southampton and Winchester and a longer list of brand and event work.
-            </p>
-            <p>
-              I'm also a travel videographer at heart — I've filmed across the
-              USA, Canada, Australia, Iceland and Czechia, and I'm always looking
-              for the next country to point a lens at.
-            </p>
+      <section className="grain relative isolate mx-auto mt-6 max-w-[95rem] overflow-hidden rounded-3xl">
+        <img
+          src={aboutHarry}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
+          style={{ objectPosition: "center 30%" }}
+        />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/90 via-background/75 to-background/60" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/60 to-background/90" />
+
+        <div className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
+          <div className="grid gap-12 md:grid-cols-[1fr_1.3fr] md:gap-16">
+            <div>
+              <p className="text-eyebrow">About</p>
+              <h2 className="text-display mt-3 text-4xl md:text-5xl">
+                Hi, I'm Harry.
+                <br />
+                <span className="italic text-primary">Cardiff-based.</span>
+              </h2>
+            </div>
+            <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+              <p>
+                I'm a videographer and editor with a First Class Honours degree in
+                Film & Television Production, specialising in camera operation and
+                editing. Five years behind the camera, four of them on commercial
+                work, and a lot of quiet hours in the grade.
+              </p>
+              <p>
+                I spent several years with a local production agency covering
+                BBC <em>Gardeners' World Live</em> and the <em>BBC Good Food Show
+                Summer</em> in 2024 and 2025, alongside university films for
+                Southampton and Winchester and a longer list of brand and event work.
+              </p>
+              <p>
+                I'm also a travel videographer at heart — I've filmed across the
+                USA, Canada, Australia, Iceland and Czechia, and I'm always looking
+                for the next country to point a lens at.
+              </p>
+            </div>
           </div>
         </div>
-
-        {/* Portrait beneath about — cropped 4:3 */}
-        <figure className="relative mt-14 overflow-hidden rounded-3xl aspect-[4/3] md:aspect-[3/2]">
-          <img
-            src={aboutHarry}
-            alt="Harry on location with the camera"
-            className="h-full w-full object-cover"
-            style={{ objectPosition: "center 35%" }}
-          />
-        </figure>
       </section>
+
 
 
       <section className="relative isolate mx-auto mt-16 max-w-7xl overflow-hidden rounded-3xl px-6 py-16 md:px-10">
