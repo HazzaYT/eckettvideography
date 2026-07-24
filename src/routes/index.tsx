@@ -276,17 +276,16 @@ function Index() {
             return (
               <li
                 key={c.name}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 transition hover:border-primary"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 transition hover:border-primary"
               >
-                <div className={`flex aspect-[4/3] w-full items-center justify-center p-6 ${bg}`}>
-
+                <div className={`flex aspect-[4/3] w-full items-center justify-center overflow-hidden p-8 ${bg}`}>
                   <img
                     src={c.logo}
                     alt={`${c.name} logo`}
-                    className="max-h-full max-w-full object-contain"
+                    className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="border-t border-border/60 bg-surface px-4 py-3 text-center text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+                <p className="mt-auto border-t border-border/60 bg-surface px-4 py-3 text-center text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                   {c.note}
                 </p>
               </li>
